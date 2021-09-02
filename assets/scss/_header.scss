@@ -1,0 +1,299 @@
+header {
+    .top-header {
+        padding: 10px 0;
+        background-color: #031026;
+        border-top: 3px solid #d43832;
+        @include responsive(lg) {
+            padding: 16px 0;
+            border-top: 8px solid #d43832;
+        }
+        .row {
+            align-items: center;
+            justify-content: center;
+        }
+        .middle-block {
+            display: flex;
+            justify-content: center;
+        }
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            li {
+                padding: 0;
+                position: relative;
+                &:before {
+                    content: '-';
+                    margin: 0 10px;
+                    color: #538de4;
+                }
+                &:first-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+                a {
+                    color: #538de4;
+                    font-size: 14px;
+                    line-height: 37px;
+                    font-weight: bold;
+                    text-decoration: none;
+                    @include responsive(xl) {
+                        font-size: 16px;
+                    }
+                    @include responsive(xxl) {
+                        font-size: 19px;
+                        line-height: 37px;
+                    }
+                }
+            }
+            &.info {
+                li {
+                    padding: 0 9px;
+                    &:before {
+                        display: none;
+                    }
+                    span {
+                        color: #538de4;
+                        font-size: 14px;
+                        line-height: 37px;
+                        font-weight: 400;
+                        @include responsive(xl) {
+                            font-size: 16px;
+                        }
+                    }
+                    a {
+                        color: $white;
+                        font-size: 14px;
+                        line-height: 37px;
+                        font-weight: bold;
+                        text-decoration: none;
+                        @include responsive(xl) {
+                            font-size: 16px;
+                        }
+                        @include responsive(xxl) {
+                            font-size: 19px;
+                            line-height: 37px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .bottom-header {
+        padding: 15px 0;
+        background-color: $white;
+        @include responsive(lg) {
+            padding: 51px 0;
+        }
+        &.fixed-header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%; 
+            z-index: 9;
+        }
+        > .container {
+            max-width: 100%;
+            padding: 0;
+            @include responsive(lg) {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+            @include responsive(xl) {
+                padding-left: 25px;
+                padding-right: 25px;
+                max-width: 1100px;  
+            }
+            @include responsive(xxl) {
+                max-width: 1460px;  
+            }
+        }
+        .navbar {
+            padding: 0;
+            .navbar-brand {
+                padding: 0 0 0 15px;
+                @include responsive(lg) {
+                    padding: 0;
+                }
+                img {
+                    max-width: 151px;
+                    @include responsive(xl) {
+                        max-width: 222px;
+                    }
+                    @include responsive(xxl) {
+                        max-width: 100%;
+                    }
+                }
+            }   
+            .navbar-toggler {
+                position: absolute;
+                top: 0;
+                right: 15px;
+                &:focus {
+                    outline: 0;
+                }
+                .navbar-toggler-icon {
+                    background-image: url(../images/hamburger.png);
+                    width: 23px;
+                    height: 17px;
+                }
+            }
+        }
+        .navbar-collapse {    
+            position: absolute;
+            top: 50px;
+            left: 0;
+            right: 0;
+            width: 100%;
+            z-index: 9;
+            margin: auto;
+            background-color: #4b80d1;
+            @include responsive(lg) {
+                position: static;
+                background-color: transparent;
+            }
+            .navbar-nav {
+                padding: 22px;
+                @include responsive(sm) {
+                    padding: 32px 36px;
+                }
+                @include responsive(lg) {
+                    padding: 0;
+                }
+                .nav-item {
+                    padding: 0;
+                    @include responsive(lg) {
+                        padding: 12px 14px;
+                    }
+                    &:last-child {
+                        @include responsive(xxl) {
+                            padding: 0 0 0 50px;
+                        }
+                    }
+                    .nav-link {
+                        padding: 0;
+                        color: $white;
+                        font-size: 16px;
+                        line-height: 33px;
+                        font-weight: 500;
+                        @include responsive(lg) {
+                            color: $black;
+                            font-size: 12px;
+                        }
+                        @include responsive(xl) {
+                            font-size: 14px;
+                        }
+                        @include responsive(xxl) {
+                            font-size: 19px;
+                            line-height: 37px;
+                        }
+                    }
+                    .btn-blue {
+                        padding: 9px 28px;
+                        border-radius: 15px;
+                        background-color: #061226;
+                        @include responsive(lg) {
+                            padding: 9px 28px;
+                            border-radius: 5px;
+                            background-color: #4b80d1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .mobile-header {
+        padding: 5px 5px;
+        background-color: #4b80d1;
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            li {
+                padding: 0;
+                position: relative;
+                &:before {
+                    content: '-';
+                    margin: 0 10px;
+                    color: $white;
+                }
+                &:first-child {
+                    &:before {
+                        display: none;
+                    }
+                }
+                a {
+                    color: $white;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    letter-spacing: 3px;
+                    @include responsive(xxl) {
+                        font-size: 19px;
+                        line-height: 37px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.mobile-details {
+    padding: 22px;
+    border-top: 1px solid $white;
+    @include responsive(sm) {
+        padding: 22px 36px;
+    }
+    .info {
+        padding: 0 0 22px;
+        li {
+            span {
+                color: #061226;
+                font-size: 14px;
+                line-height: 33px;
+                @include responsive(sm) {
+                    font-size: 16px;
+                }
+            }
+            a {
+                color: $white;
+                font-size: 14px;
+                line-height: 33px;
+                font-weight: bold;
+                @include responsive(sm) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .btn-blue {
+        padding: 9px 28px;
+        border-radius: 5px;
+        background-color: #061226;
+    }
+    .social-wrapper {
+        .social-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            li {
+                padding-left: 10px;
+                a {
+                    width: 39px;
+                    height: 39px;
+                    line-height: 39px;
+                    border-radius: 39px;
+                    text-align: center;
+                    background-color: #f0f2f6;
+                    display: inline-block;
+                    i {
+                        color: #4b80d1;
+                    }
+                }
+            }
+        }
+    }
+}

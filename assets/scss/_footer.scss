@@ -1,0 +1,160 @@
+footer {
+    background-color: #061329;
+    border-top: 3px solid #d43832;
+    @include responsive(lg) {
+        border-top: 8px solid #d43832;
+    }
+    .container {
+        padding: 0 40px;
+        @include responsive(lg) {
+            padding: 0 25px;
+        }
+    }
+    .footer-top-block {
+        padding: 33px 0;
+        border-bottom: 1px solid $white;
+        @include responsive(lg) {
+            padding: 60px 0 52px;
+        }
+        .navbar-brand {
+            img {
+                max-width: 167px;
+                @include responsive(xl) {
+                    max-width: 100%;
+                }
+            }
+        }
+        .footer-top-left-block {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            @include responsive(xl) {
+                flex-direction: column;
+            }
+            ul {
+                display: flex;
+                flex-direction: row;
+                @include responsive(xl) {
+                    margin-top: 20px;
+                }
+                li {
+                    margin-right: 8px;
+                    a {
+                        width: 39px;
+                        height: 39px;
+                        line-height: 39px;
+                        border-radius: 39px;
+                        text-align: center;
+                        background-color: #f0f2f6;
+                        display: inline-block;
+                        i {
+                            color: #061329;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-top-right-block {
+            h5 {
+                margin: 0 0 25px;
+                color: $white;
+                font-size: 15px;
+                line-height: 19px;
+                font-weight: bold;
+                text-transform: uppercase;
+                @include responsive(xl) {
+                    font-size: 19px;
+                    line-height: 23px;
+                }
+            }
+            h6 {
+                margin: 0;
+                color: #538de4;
+                font-size: 15px;
+                line-height: 19px;
+                font-weight: bold;
+                @include responsive(xl) {
+                    font-size: 17px;
+                    line-height: 29px;
+                }
+            }
+            p {
+                margin: 0 0 15px;
+                color: $white;
+                font-size: 15px;
+                line-height: 23px;
+                font-weight: 300;
+                @include responsive(lg) {
+                    margin: 0;
+                }
+                @include responsive(xxl) {
+                    font-size: 19px;
+                    line-height: 23px;
+                }
+                br {
+                    display: none;
+                    @include responsive(lg) {
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom-block {
+        padding: 24px 0 29px;
+        @include responsive(lg) {
+            padding: 34px 0 52px;
+        }
+        ul {
+            display: flex;
+            flex-direction: column;
+            @include responsive(lg) {
+                flex-direction: row;
+            }
+            li {
+                padding: 0 8px;
+                a {
+                    color: $white;
+                    font-size: 16px;
+                    line-height: 18px;
+                    font-weight: 300;
+                    text-decoration: none;
+                    @include responsive(lg) {
+                        font-size: 12px;
+                        line-height: 18px;
+                    }
+                    @include responsive(xl) {
+                        font-size: 16px;
+                        line-height: 18px;
+                    }
+                    @include responsive(xxl) {
+                        font-size: 18px;
+                        line-height: 18px;
+                    }
+                }
+            }
+        }
+        .copyright-block {
+            text-align: center;
+            @include responsive(lg) {
+                text-align: right;
+            }
+            p {
+                margin: 0;
+                color: $white;
+                font-size: 12px;
+                line-height: 14px;
+                font-weight: 300;
+                @include responsive(xl) {
+                    font-size: 15px;
+                    line-height: 22px;
+                }
+            }
+        }
+        &.footer-mobile-bottom-block {
+            > .row {
+                margin: 0 -10px;
+            }
+        }
+    }
+}
