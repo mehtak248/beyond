@@ -8,6 +8,13 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
+  $('.navbar-nav .nav-link, .navbar-nav .btn-blue, .footer-bottom-block ul li a').on('click', function() {
+    $('html, body').animate({
+      scrollTop: $( $(this).attr('href') ).offset().top - 250
+    }, 500);
+    return false;
+  });
+
   $('.testimonial-slider').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
