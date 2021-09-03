@@ -91,7 +91,7 @@ header {
             top: 0;
             left: 0;
             width: 100%; 
-            z-index: 9;
+            z-index: 99;
         }
         > .container {
             max-width: 100%;
@@ -138,6 +138,13 @@ header {
                     width: 23px;
                     height: 17px;
                 }
+                &.active {
+                    .navbar-toggler-icon {
+                        background-image: url(../images/close.png);
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
             }
         }
         .navbar-collapse {    
@@ -180,13 +187,14 @@ header {
                         @include responsive(lg) {
                             color: $black;
                             font-size: 12px;
+                            line-height: 57px;
                         }
                         @include responsive(xl) {
-                            font-size: 14px;
+                            font-size: 13px;
+                            line-height: 57px;
                         }
                         @include responsive(xxl) {
                             font-size: 19px;
-                            line-height: 37px;
                         }
                     }
                     .btn-blue {

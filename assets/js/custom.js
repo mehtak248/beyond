@@ -1,10 +1,10 @@
 $(window).scroll(function(){
-  // if ($(window).scrollTop() >= 87) {
-  //   $('.bottom-header').addClass('fixed-header');
-  // }
-  // else {
-  //   $('.bottom-header').removeClass('fixed-header');
-  // }
+  if ($(window).scrollTop() >= 87) {
+    $('.bottom-header').addClass('fixed-header');
+  }
+  else {
+    $('.bottom-header').removeClass('fixed-header');
+  }
 });
 
 $(document).ready(function() {
@@ -13,5 +13,9 @@ $(document).ready(function() {
     slidesToScroll: 1,
     arrows: true,
     dots: false
+  });
+
+  $('.navbar-toggler').on('click', function () {
+    $(this).toggleClass('active');
   });
 });
