@@ -11,7 +11,7 @@ footer {
         }
     }
     .footer-top-block {
-        padding: 33px 0;
+        padding: 33px 0 10px;
         border-bottom: 1px solid $white;
         @include responsive(lg) {
             padding: 60px 0 52px;
@@ -55,6 +55,19 @@ footer {
             }
         }
         .footer-top-right-block {
+            padding: 30px 40px 0;
+            margin: 0 -40px;
+            overflow: hidden;
+            border-top: 1px solid $white;
+            @include responsive(md) {
+                padding: 30px 65px 0;
+                margin: 0 -65px;
+            }
+            @include responsive(lg) {
+                margin: 0;
+                padding: 0;
+                border-top: 0;
+            }
             h5 {
                 margin: 0 0 25px;
                 color: $white;
@@ -86,6 +99,7 @@ footer {
                 font-weight: 300;
                 @include responsive(lg) {
                     margin: 0;
+                    font-size: 12px;
                 }
                 @include responsive(xxl) {
                     font-size: 19px;
@@ -114,7 +128,7 @@ footer {
             li {
                 padding: 0 8px;
                 a {
-                    color: $white;
+                    color: #c1c4c9;
                     font-size: 16px;
                     line-height: 18px;
                     font-weight: 300;

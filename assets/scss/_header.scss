@@ -162,7 +162,7 @@ header {
             }
             .navbar-nav {
                 padding: 22px;
-                @include responsive(sm) {
+                @include responsive(xs) {
                     padding: 32px 36px;
                 }
                 @include responsive(lg) {
@@ -252,7 +252,7 @@ header {
 .mobile-details {
     padding: 22px;
     border-top: 1px solid $white;
-    @include responsive(sm) {
+    @include responsive(xs) {
         padding: 22px 36px;
     }
     .info {

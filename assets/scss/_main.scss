@@ -96,7 +96,7 @@
         }
         p {
             margin: 0 0 15px;
-            color: $white;
+            color: #cdd0d5;
             font-size: 13px;
             line-height: 24px;
             @include responsive(lg) {
@@ -290,7 +290,7 @@
             }
         }
         .recruited-people {
-            padding: 11px 43px;
+            padding: 11px 23px;
             display: inline-block;
             text-align: center;
             border-radius: 15px;
@@ -307,6 +307,7 @@
                 left: -10%;
                 max-width: none;
                 padding: 37px 43px;
+                text-align: center;
             }
             @include responsive(xxl) {
                 left: -150px;
@@ -339,8 +340,9 @@
         }
     }
     .staffing-right-block {
-        padding: 70px 10px;
+        padding: 70px 10px 0;
         @include responsive(lg) {
+            padding: 70px 10px;
             border-radius: 15px;
             background-color: $white;
             box-shadow: 0 0 0 10px #fcfcfc;
@@ -357,12 +359,16 @@
             left: -128px;
         }
         h6 {
+            margin: 0;
             color: #4b80d1;
             font-weight: bold;
             font-size: 19px;
             line-height: 29px;
             font-family: $font-family2;
             text-transform: uppercase;
+            @include responsive(xl) {
+                margin-bottom: .5rem;
+            }
         }
         h1 {
             margin: 0 0 20px;
@@ -413,11 +419,14 @@
                     margin-bottom: 50px;
                     padding: 0 45px;
                 }
+                > .row {
+                    align-items: center;
+                }
                 h5 {
                     margin: 0;
                     color: $black;
                     font-size: 12px;
-                    line-height: 19px;
+                    line-height: 14px;
                     font-weight: bold;
                     font-family: $font-family2;
                     @include responsive(lg) {
@@ -432,6 +441,9 @@
 
 .industries-block {
     padding: 20px 0;
+    @include responsive(xs) {
+        padding: 38px 0;
+    }
     @include responsive(lg) {
         padding: 50px 0;
     }
@@ -440,10 +452,12 @@
     }
     .heading-block {
         h1 {
+            margin: 0 auto;
             position: relative;
             font-size: 38px;
             line-height: 48px;
             @include responsive(xl) {
+                margin: 30px auto 0;
                 font-size: 34px;
                 line-height: 44px;
             }
@@ -677,6 +691,15 @@
                 height: 202px;
                 padding: 30px 15px;
             }
+            span {
+                height: 67px;
+                line-height: 67px;
+                display: inline-block;
+                @include responsive(lg) {
+                    height: auto;
+                    line-height: normal;
+                }
+            }
             h5 {
                 color: $white;
                 margin: 10px 0 0;
@@ -726,6 +749,12 @@
             @include responsive(xl) {
                 text-align: left;
             }
+            h1 {
+                margin: 0 auto;
+                @include responsive(lg) {
+                    margin: 30px auto 0;
+                }
+            }
         }
         .faq-accordion {
             .card {
@@ -733,7 +762,7 @@
                 margin-bottom: 20px;
                 .card-header {
                     border: 0;
-                    padding: 15px;
+                    padding: 12px;
                     background-color: #f5f5f5;
                     @include responsive(xxl) {
                         padding: 30px;
@@ -753,7 +782,7 @@
                 }
                 .faq-collapse {
                     .card-body {
-                        padding: 15px;
+                        padding: 12px;
                         @include responsive(xxl) {
                             padding: 30px;
                         }
@@ -807,7 +836,7 @@
                 }
             }
             .testimonial-slider {
-                margin: 40px auto 60px;
+                margin: 20px auto 60px;
                 padding: 40px;
                 border-radius: 15px;
                 border-bottom-left-radius: 0;
@@ -1057,7 +1086,7 @@
                     color: $white;
                     font-size: 14px;
                     line-height: 19px;
-                    border-radius: 15px;
+                    border-radius: 10px;
                     background-color: #81aae9;
                     @include responsive(xl) {
                         padding: 16px 30px;
