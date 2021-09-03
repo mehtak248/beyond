@@ -223,9 +223,11 @@
                 display: none;
                 @include responsive(lg) {
                     display: inline-block;
+                    line-height: 20px;
                 }
                 @include responsive(xxl) {
                     font-size: 17px;
+                    line-height: 20px;
                 }
             }
         }
@@ -1083,7 +1085,7 @@
                         line-height: 29px;
                         font-weight: bold;
                         padding: 13px 47px;
-                        border-radius: 15px;
+                        border-radius: 5px;
                         text-transform: uppercase;
                         background-color: #061329;
                     }
