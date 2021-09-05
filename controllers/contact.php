@@ -8,13 +8,13 @@ error_reporting(E_ALL);
 require_once("../phpmailer/vendor/autoload.php");
 
 if(!defined("SMTP_HOST"))
-    define("SMTP_HOST",'mail.rapidrsg.com');
+    define("SMTP_HOST",'');
 
 if(!defined("SMTP_USERNAME"))
-    define("SMTP_USERNAME",'info@rapidrsg.com');
+    define("SMTP_USERNAME",'');
 
 if(!defined("SMTP_PASSWORD"))
-    define("SMTP_PASSWORD",'INfo@2021'); //k2fmGYzn9E 
+    define("SMTP_PASSWORD",''); //k2fmGYzn9E 
 
 if(!defined("SMTP_SECURE"))
     define("SMTP_SECURE",'ssl');
