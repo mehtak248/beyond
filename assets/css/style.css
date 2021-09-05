@@ -16918,6 +16918,10 @@ header .mobile-header ul li a {
   background-color: #061329;
 }
 
+/*Set the error class for validation*/
+#frm_contact_form label.error {
+  color: #d43832;
+}
 /* line 1, ../scss/_vcard.scss */
 .vcard-block {
   position: relative;

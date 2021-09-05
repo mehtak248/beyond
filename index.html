@@ -578,23 +578,24 @@
                 </div>
                 <div class="col-lg-7 col-xl-7">
                     <div class="get-in-touch-right-block">
-                        <form class="contact-form">
+                        <form class="contact-form" id="frm_contact_form" method="post">
+                            <input type="hidden" name="action" value="get_enquiry">
                             <div class="row">
                                 <div class="col-sm-6">
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Name" />
+                                                <input type="text" name="name" class="form-control" placeholder="Name"/>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Email" />
+                                                <input type="email" name="email" class="form-control" placeholder="Email"/>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-group">
-                                                <input type="number" class="form-control" placeholder="Phone" />
+                                                <input type="number" name="phone" class="form-control" placeholder="Phone"/>
                                             </div>
                                         </div>
                                     </div>
@@ -603,13 +604,30 @@
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="form-group textarea-group">
-                                                <textarea class="form-control" placeholder="Message"></textarea>
+                                                <textarea class="form-control" name="message" placeholder="Message"></textarea>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
                                             <div class="form-group button-group">
-                                                <button type="submit" class="btn-submit">Submit</button>
+                                                <button type="submit" id="btn_contact_submit" class="btn-submit">Submit</button>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div>
+                                        <div class="alert alert-success alert-dismissible d-none" role="alert">
+                                            You have successfully submitted details
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        
+                                        <div class="alert alert-danger alert-dismissible d-none" role="alert">
+                                            Sorry, Something went wrong.
+                                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
                                         </div>
                                     </div>
                                 </div>
@@ -701,6 +719,8 @@
     </footer>
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.form.js"></script>
+    <script src="assets/js/jquery.validate.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/slick.min.js"></script>
