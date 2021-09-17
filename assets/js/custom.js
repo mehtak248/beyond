@@ -8,7 +8,7 @@ $(window).scroll(function(){
 });
 
 $(document).ready(function() {
-    $('.navbar-nav .nav-link, .navbar-nav .btn-blue, .footer-bottom-block ul li a').on('click', function() {
+    $('.navbar-nav .nav-link, .navbar-nav .btn-blue, .footer-bottom-block ul li a, .banner-block .btn-red').on('click', function() {
         $('html, body').animate({
             scrollTop: $( $(this).attr('href') ).offset().top - 250
         }, 500);

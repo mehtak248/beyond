@@ -11,9 +11,17 @@ header {
             align-items: center;
             justify-content: center;
         }
+        .left-block {
+            @include responsive(xl) {
+                max-width: 80%;
+            }
+        }
         .middle-block {
             display: flex;
             justify-content: center;
+            @include responsive(xl) {
+                justify-content: flex-start;
+            }
         }
         ul {
             display: flex;
@@ -38,9 +46,6 @@ header {
                     line-height: 37px;
                     font-weight: bold;
                     text-decoration: none;
-                    @include responsive(xl) {
-                        font-size: 16px;
-                    }
                     @include responsive(xxl) {
                         font-size: 19px;
                         line-height: 37px;
@@ -58,7 +63,7 @@ header {
                         font-size: 14px;
                         line-height: 37px;
                         font-weight: 400;
-                        @include responsive(xl) {
+                        @include responsive(xxl) {
                             font-size: 16px;
                         }
                     }
@@ -68,9 +73,6 @@ header {
                         line-height: 37px;
                         font-weight: bold;
                         text-decoration: none;
-                        @include responsive(xl) {
-                            font-size: 16px;
-                        }
                         @include responsive(xxl) {
                             font-size: 19px;
                             line-height: 37px;
@@ -83,7 +85,11 @@ header {
     .bottom-header {
         padding: 15px 0;
         background-color: $white;
+        transition: 0.5s padding ease;
         @include responsive(lg) {
+            padding: 30px 0;
+        }
+        @include responsive(xxl) {
             padding: 51px 0;
         }
         &.fixed-header {
@@ -92,6 +98,12 @@ header {
             left: 0;
             width: 100%; 
             z-index: 99;
+            @include responsive(lg) {
+                padding: 20px 0;
+            }
+            @include responsive(xxl) {
+                padding: 41px 0;
+            }
         }
         > .container {
             max-width: 100%;
@@ -103,7 +115,7 @@ header {
             @include responsive(xl) {
                 padding-left: 25px;
                 padding-right: 25px;
-                max-width: 1100px;  
+                max-width: 1160px;  
             }
             @include responsive(xxl) {
                 max-width: 1460px;  
@@ -262,7 +274,7 @@ header {
                 color: #061226;
                 font-size: 14px;
                 line-height: 33px;
-                @include responsive(sm) {
+                @include responsive(xxl) {
                     font-size: 16px;
                 }
             }
@@ -271,7 +283,7 @@ header {
                 font-size: 14px;
                 line-height: 33px;
                 font-weight: bold;
-                @include responsive(sm) {
+                @include responsive(xxl) {
                     font-size: 16px;
                 }
             }
