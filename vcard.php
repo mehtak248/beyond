@@ -34,17 +34,17 @@
         <div class="top-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-lg-3 col-xl-2 left-block">
+                    <div class="col-sm-4 col-lg-3 col-xl-4 left-block">
                         <img src="assets/images/asa.png" class="img-fluid" />
                     </div>
-                    <div class="col-sm-3 col-lg-3 col-xl-3 middle-block d-none d-lg-block">
+                    <div class="col-sm-3 col-lg-3 col-xl-3 middle-block d-none d-lg-flex">
                         <ul>
                             <li><a href="javascript:void(0);">Ahaheim</a></li>
                             <li><a href="javascript:void(0);">Ontario</a></li>
                             <li><a href="javascript:void(0);">Hayward</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-5 col-lg-6 col-xl-6 right-block d-none d-lg-block">
+                    <div class="col-sm-5 col-lg-6 col-xl-5 right-block d-none d-lg-block">
                         <ul class="info">
                             <li><span>Email: </span><a href="mailto:<?php echo (isset($profileData['email']) ? $profileData['email'] : ''); ?>"><?php echo (isset($profileData['email']) ? $profileData['email'] : ''); ?></a></li>
                             <li><span>Phone: </span><a href="tel:<?php echo (isset($profileData['phone']) ? $profileData['phone'] : ''); ?>"><?php echo (isset($profileData['phone']) ? $profileData['phone'] : ''); ?></a></li>
@@ -56,7 +56,7 @@
         <div class="bottom-header">
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="/">
+                    <a class="navbar-brand" href="index.html">
                         <img src="assets/images/logo.png" class="img-fluid" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -205,7 +205,7 @@
                 <div class="row">
                     <div class="col-lg-5">
                         <div class="footer-top-left-block">
-                            <a class="navbar-brand" href="/">
+                            <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/footer-logo.png" class="img-fluid" />
                             </a>
                             <ul>
