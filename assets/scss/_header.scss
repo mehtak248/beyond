@@ -131,6 +131,7 @@ header {
                     padding: 0;
                 }
                 img {
+                    width: 100%;
                     max-width: 151px;
                     @include responsive(xl) {
                         max-width: 222px;

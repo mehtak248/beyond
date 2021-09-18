@@ -18,9 +18,10 @@ footer {
         }
         .navbar-brand {
             img {
+                width: 100%;
                 max-width: 167px;
                 @include responsive(xl) {
-                    max-width: 100%;
+                    max-width: 182px;
                 }
             }
         }
@@ -40,15 +41,9 @@ footer {
                 li {
                     margin-right: 8px;
                     a {
-                        width: 39px;
-                        height: 39px;
-                        line-height: 39px;
-                        border-radius: 39px;
-                        text-align: center;
-                        background-color: #f0f2f6;
-                        display: inline-block;
-                        i {
-                            color: #061329;
+                        img {
+                            width: 100%;
+                            max-width: 39px;
                         }
                     }
                 }

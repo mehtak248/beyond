@@ -57,7 +57,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.html">
-                        <img src="assets/images/logo.png" class="img-fluid" />
+                        <img src="assets/images/logo.svg" class="img-fluid" />
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -206,11 +206,11 @@
                     <div class="col-lg-5">
                         <div class="footer-top-left-block">
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/footer-logo.png" class="img-fluid" />
+                                <img src="assets/images/footer-logo.svg" class="img-fluid" />
                             </a>
                             <ul>
-                                <li><a href="javascript:void(0);"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="javascript:void(0);"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                <li><a href="javascript:void(0);"><img src="assets/images/facebook.svg" class="img-fluid" /></a></li>
+                                <li><a href="javascript:void(0);"><img src="assets/images/linkedin.svg" class="img-fluid" /></a></li>
                             </ul>
                         </div>
                     </div>
