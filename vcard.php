@@ -9,8 +9,8 @@
         'address_2' => '1035 S. Milliken Avenue #D - Ontario, CA 91761',
         'address_3' => '24301 Southland Dr. #304 - Hayward, CA 94545',
         'phone'   => '(714) 844-7141',
-        'email'   => 'info@moonstone-peo.com',
-        'website' => 'http://www.moonstone-peo.com/',
+        'email'   => 'lily.banuelos@BeyondFinancialSolutions.com',
+        'website' => 'http://www.beyondfinancialsolutions.com/',
     );
 ?>
 
@@ -34,7 +34,7 @@
         <div class="top-header">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-lg-3 col-xl-4 left-block">
+                    <div class="col-sm-4 col-lg-3 col-xl-3 left-block">
                         <img src="assets/images/asa.png" class="img-fluid" />
                     </div>
                     <div class="col-sm-3 col-lg-3 col-xl-3 middle-block d-none d-lg-flex">
@@ -44,10 +44,10 @@
                             <li><a href="javascript:void(0);">Hayward</a></li>
                         </ul>
                     </div>
-                    <div class="col-sm-5 col-lg-6 col-xl-5 right-block d-none d-lg-block">
+                    <div class="col-sm-5 col-lg-6 col-xl-6 right-block d-none d-lg-block">
                         <ul class="info">
-                            <li><span>Email: </span><a href="mailto:<?php echo (isset($profileData['email']) ? $profileData['email'] : ''); ?>"><?php echo (isset($profileData['email']) ? $profileData['email'] : ''); ?></a></li>
-                            <li><span>Phone: </span><a href="tel:<?php echo (isset($profileData['phone']) ? $profileData['phone'] : ''); ?>"><?php echo (isset($profileData['phone']) ? $profileData['phone'] : ''); ?></a></li>
+                            <li><span>Email: </span><a href="mailto:lily.banuelos@BeyondFinancialSolutions.com">lily.banuelos@BeyondFinancialSolutions.com</a></li>
+                            <li><span>Phone: </span><a href="tel:7144624893">(714) 462-4893</a></li>
                         </ul>
                     </div>
                 </div>
@@ -62,39 +62,39 @@
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                
+
                     <div class="collapse navbar-collapse" id="navbar">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
-                                <a class="nav-link" href="javascript:void(0);">Staffing</a>
+                                <a class="nav-link" href="#staffing">Staffing</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">Recruiting</a>
+                                <a class="nav-link" href="#recruiting">Recruiting</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">Job Seekers</a>
+                                <a class="nav-link" href="#job-seekers">Job Seekers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">Services</a>
+                                <a class="nav-link" href="#services">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">Resources</a>
+                                <a class="nav-link" href="#resources">Resources</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">About us</a>
+                                <a class="nav-link" href="#about-us">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">Contact us</a>
+                                <a class="nav-link" href="#contact-us">Contact us</a>
                             </li>
                             <li class="nav-item d-none d-lg-block">
-                                <a class="btn btn-blue" href="javascript:void(0);">Apply online</a>
+                                <a class="btn btn-blue" href="#contact-us">Apply online</a>
                             </li>
                         </ul>
 
                         <div class="mobile-details d-lg-none">
                             <ul class="info">
-                                <li><span>Email: </span><a href="mailto:info@beyondfinancialsolutions.com">info@beyondfinancialsolutions.com</a></li>
-                                <li><span>Phone: </span><a href="tel:7148447170">(714) 844-7170</a></li>
+                                <li><span>Email: </span><a href="mailto:lily.banuelos@BeyondFinancialSolutions.com">lily.banuelos@BeyondFinancialSolutions.com</a></li>
+                                <li><span>Phone: </span><a href="tel:7144624893">(714) 462-4893</a></li>
                             </ul>
                             <div class="row">
                                 <div class="col-6">

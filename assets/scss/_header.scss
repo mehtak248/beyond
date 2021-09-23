@@ -11,19 +11,9 @@ header {
             align-items: center;
             justify-content: center;
         }
-        .left-block {
-            img {
-                @include responsive(xl) {
-                    max-width: 80%;
-                }
-            }
-        }
         .middle-block {
             display: flex;
             justify-content: center;
-            @include responsive(xl) {
-                justify-content: flex-start;
-            }
         }
         ul {
             display: flex;
@@ -98,7 +88,7 @@ header {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%; 
+            width: 100%;
             z-index: 99;
             @include responsive(lg) {
                 padding: 20px 0;
@@ -107,7 +97,7 @@ header {
                 padding: 41px 0;
             }
         }
-        > .container {
+        >.container {
             max-width: 100%;
             padding: 0;
             @include responsive(lg) {
@@ -117,10 +107,10 @@ header {
             @include responsive(xl) {
                 padding-left: 25px;
                 padding-right: 25px;
-                max-width: 1160px;  
+                max-width: 1160px;
             }
             @include responsive(xxl) {
-                max-width: 1460px;  
+                max-width: 1460px;
             }
         }
         .navbar {
@@ -140,7 +130,7 @@ header {
                         max-width: 300px;
                     }
                 }
-            }   
+            }
             .navbar-toggler {
                 position: absolute;
                 top: 0;
@@ -162,7 +152,7 @@ header {
                 }
             }
         }
-        .navbar-collapse {    
+        .navbar-collapse {
             position: absolute;
             top: 50px;
             left: 0;
@@ -273,21 +263,27 @@ header {
     .info {
         padding: 0 0 22px;
         li {
+            display: flex;
+            margin: 0 0 10px;
             span {
                 color: #061226;
                 font-size: 14px;
-                line-height: 33px;
+                line-height: 16px;
                 @include responsive(xxl) {
                     font-size: 16px;
+                    line-height: 33px;
                 }
             }
             a {
                 color: $white;
                 font-size: 14px;
-                line-height: 33px;
+                line-height: 16px;
                 font-weight: bold;
+                word-break: break-all;
+                padding: 0 0 0 7px;
                 @include responsive(xxl) {
                     font-size: 16px;
+                    line-height: 33px;
                 }
             }
         }
