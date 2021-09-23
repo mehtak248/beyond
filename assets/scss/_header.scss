@@ -55,6 +55,12 @@ header {
                         font-size: 14px;
                         line-height: 37px;
                         font-weight: 400;
+                        @include responsive(lg) {
+                            font-size: 12px;
+                        }
+                        @include responsive(xl) {
+                            font-size: 14px;
+                        }
                         @include responsive(xxl) {
                             font-size: 16px;
                         }
@@ -65,9 +71,14 @@ header {
                         line-height: 37px;
                         font-weight: bold;
                         text-decoration: none;
+                        @include responsive(lg) {
+                            font-size: 12px;
+                        }
+                        @include responsive(xl) {
+                            font-size: 14px;
+                        }
                         @include responsive(xxl) {
                             font-size: 19px;
-                            line-height: 37px;
                         }
                     }
                 }
