@@ -23,7 +23,7 @@
     <meta name="author" content="">
 
     <title>Beyond</title>
-
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link href="assets/css/style.css" rel="stylesheet">
   </head>
 
